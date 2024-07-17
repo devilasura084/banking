@@ -8,7 +8,21 @@ export default function RootLayout({
   }: Readonly<{
     children: React.ReactNode;
   }>) {
-    const LoggedIn={firstname:'Subhoraj',lastname:"das"};
+    const LoggedIn={
+      $id: "",
+     email:"",
+     userId: "",
+     dwollaCustomerUrl:"",
+     dwollaCustomerId:"",
+     firstName: "Subhoraj",
+     lastName: "Das",
+     address1: "",
+     city: "",
+     state: "",
+     postalCode: "",
+     dateOfBirth: "",
+     ssn: "",
+    };
     return (
       <main className="flex h-screen w-full font-inter ">
         <Sidebar user={LoggedIn} />
